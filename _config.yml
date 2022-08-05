@@ -23,7 +23,7 @@ email: ping@anjumrashid.me
 description: >- # this means to ignore newlines until "baseurl:"
   Hi, this is Anjum Rashid, a CS grad & a tech community builder, pinging from Bangladesh! Cloud. infoSec and blockchain are my cup of tea! ☕ 
 
-baseurl: "bijoy26.github.io" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bijoy26.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: anjum_bijoy26
 github_username:  bijoy26
