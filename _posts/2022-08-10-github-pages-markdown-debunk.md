@@ -1,17 +1,16 @@
 ---
 title: "Master of Markdown : Debunking the Parsing Issue in GitHub Pages"
-date: YYYY-MM-DD HH:MM:SS +0600
+date: 2022-08-10 23:00:00 +0600
 author: 01
 img_path: /assets/img/posts-img/2022-08-10/
 image:
   path: /cover.jpg
-  width: 500   # in pixels
-  height: 500   # in pixels
-  alt: A trojan horse meme about jekyll, kramdown, markdown and github pages 
-categories: [WEB_DEVELOPMENT, GITHUB_PAGES]
+  width: 300   # in pixels
+  height: 300   # in pixels 
+categories: [Web Development, GitHub Pages ]
 tags: [jekyll, static-site, markdown, GFM, tech-tips, workaround]  
 render_with_liquid: false
-
+pin: true
 # img_path: /assets/img/posts-img/YYYY-MM-DD/
 # Add image => ![Desktop View](/assets/img/sample/mockup.png){: w="700" h="400" }
 # toc: false    // table of contents in right sidebar
@@ -28,11 +27,11 @@ render_with_liquid: false
 #                   {: .nolineno }
 #                   {: file="add-filename-here" }
 ---
-![Web Dev](https://img.shields.io/badge/Domain-Web%20Dev-blue.svg)
-![Topic: Tech Tips](https://img.shields.io/badge/Category-Tech%20Tips-green.svg)
-![GitHub Pages](https://img.shields.io/badge/Environment-GitHub%20Pages-darkgreen.svg)
-![Reading Time](https://img.shields.io/badge/Reading%20Time-4%20mins-white.svg)
 
+![Web Dev](https://img.shields.io/badge/Domain-Web%20Dev-blue.svg){: w="100" h="15" .left }
+![Topic: Tech Tips](https://img.shields.io/badge/Category-Tech%20Tips-green.svg){: w="100" h="20" .left }
+![GitHub Pages](https://img.shields.io/badge/Environment-GitHub%20Pages-darkgreen.svg){: w="150" h="20" .left}
+<br>
 
 ## 📺 Context
  
@@ -45,7 +44,7 @@ render_with_liquid: false
 
 ## ⏩ TL;DR
 
-> In a rush? Skip to [The Fix](#📌-the-fix-🔨) section to get the solution.
+> In a rush? Skip to [The Fix 🔨](#-the-fix) to get the solution.
 {: .prompt-tip } 
 
 ## 🍦 Background
@@ -58,7 +57,7 @@ This is how the `README.md` looks like in [VS Code](#vs-code) and GitHub web:
 
 After publishing through GitHub pages, the markdown-to-HTML conversion didn't seem to go the right way.
 
-![Pages View](pages-view){: w="500px" h="500px" }
+![Pages View](pages-view.png){: w="500px" h="500px" }
 
 See the scaled out middle section? Clearly, GitHub's static site service is misinterpreting the markdown. Let's investigate and sort it out.
 
@@ -68,7 +67,7 @@ See the scaled out middle section? Clearly, GitHub's static site service is misi
 
 Back in 2004, **Markdown** came into being  with the intention of _being appealing to human readers in its markup form_. This made it widely popular in blogging, documentation, software development and readmes.
 
-![Markdown](mark.png){: w="500px" h="500px" }
+![Markdown](mark.png){: w="840" h="350px" }
 _Courtesy: `@developer_anand`_
 
 But it had some ambiguities and inconsistencies, and so a lot of markdown flavors (syntax variations) started making their appearance. 
@@ -87,7 +86,7 @@ When a repo is activated for the website service, GitHub uses [Jekyll](#jekyll) 
 
 ![Jekyll](jekyll.png){: w="650px" h="650px" }
 
-> The configuration of a Jekyll site entirely takes place in a `_config.yml` file on the root directoy. 
+> The configuration of a Jekyll site entirely takes place in a `_config.yml`{: .filepath} file in the root directoy. 
 {: .prompt-info } 
 
 It offers a lot of [configuration options](https://jekyllrb.com/docs/configuration/options/) for ease of development, integration and maintenance. 
@@ -102,7 +101,7 @@ All of the markdown variants are parsed by their corresponding  **markdown proce
 
 **Kramdown** is the default Markdown renderer for Jekyll.
 In this regard, GitHub claims-
-> You can use GFM with either processor, but only our GFM processor will always match the results you see on GitHub.
+> _You can use GFM with either processor, but only our **GFM processor** will always match the results you see on GitHub._
 {: .prompt-warning }
 
 Cool! We found the stumbling brick. 😃 
@@ -110,11 +109,11 @@ Cool! We found the stumbling brick. 😃
 Since GitHub was invoking Jekyll out-of-the-box with default options, my site's GFM markdown was being rendered by Kramdown and thus the HTML turned out different!
 
  
-### **📌 The Fix 🔨** 
+### **📌 The Fix🔨** 
 
 Following the [official docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll), we can modify our repo's `_config.yml` file (create one if nonexistant) in the root directory. Add `markdown: GFM` option to override the kramdown parser.
 
-![Fix](fix.png){: w="500px" h="500px" }
+![Fixing](fix.png){: w="500px" h="500px" }
 
 Trigger the build and deployment [workflow](#workflow) again and review the site once it is deployed.
  

@@ -12,7 +12,7 @@ Hi, this is **Anjum Rashid**, a CSE graduate & a tech community builder, pinging
 {: .prompt-tip }
 -->
 
-![Avatar](avatar-full.png){: width="300" }
+![Avatar](avatar-full.png){: w="300" }
 
 
 Having led global tech communities, I thrive on technical empowerment, productive teamwork and peer collaboration. Executing initiatives and strategically growing a platform to its fullest potential is my thing. 
