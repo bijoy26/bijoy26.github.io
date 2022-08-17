@@ -36,8 +36,8 @@ pin: true
 ## 📺 Context
  
 * You keep a **GitHub** repository for documentation purpose.
-* All the documents are written in [markdown](#markdown) syntax.
-* You activate [GitHub Pages](#github-pages) to turn the repo into a nice little website (cause you're don't prefer reinventing the wheel).
+* All the documents are written in **Markdown**[^markdown] syntax.
+* You activate **GitHub Pages**[^github-pages] to turn the repo into a nice little website (cause you're don't prefer reinventing the wheel).
 * The site is published, and out of the blue, beautiful markdown text formattings are breaking up! 🤦‍♂️  
 * Googling and going through _stack overflow_ threads and [GitHub Docs](https://docs.github.com/) aren't giving anything useful. 
 * At this point, life ain't making sense anymore. ☹ But what if I tell you, there's a way? Take the red pill 💊, and see how deep the rabbit hole goes! 👇 
@@ -49,9 +49,9 @@ pin: true
 
 ## 🍦 Background
 
-I'm an avid fan of cyber security engagements, and so I keep my solution writeups for [CTF (Capture The Flag)](#capture-the-flag) contests in my handy [ctf-journal](https://github.com/bijoy26/ctf-journal) repo.
+I'm an avid fan of cyber security engagements, and so I keep my solution writeups for **CTF (Capture The Flag)**[^capture-the-flag] contests in my handy [ctf-journal](https://github.com/bijoy26/ctf-journal) repo.
 
-This is how the `README.md` looks like in [VS Code](#vs-code) and GitHub web:
+This is how the `README.md` looks like in **VS Code**[vs-code] and GitHub web:
  
 ![GitHub View](gh-view.png){: w="500" h="500" }
 
@@ -72,7 +72,7 @@ _Courtesy: `@developer_anand`_
 
 But it had some ambiguities and inconsistencies, and so a lot of markdown flavors (syntax variations) started making their appearance. 
 
-> 💡 To solve this issue, an uniform open source specification called [CommonMark](#commonmark) was born. 
+> 💡 To solve this issue, an uniform open source specification called **CommonMark**[^commonmark] was born. 
 {: .prompt-info } 
 
 GitHub made their own dialect of markdown based on this spec by extending its features. This is called **GitHub Flavored Markdown**, often shortened as **GFM**. Now we know we are dealing with GFM whenever we use GitHub web.
@@ -82,7 +82,7 @@ GitHub made their own dialect of markdown based on this spec by extending its fe
 
 ### **📌 Strange Case of Dr Jekyll**
 
-When a repo is activated for the website service, GitHub uses [Jekyll](#jekyll) to build the site under the hood and then deploy into GitHub Pages. Jekyll is natively supported by GitHub, so the folder structure follows a generic Jekyll site layout.
+When a repo is activated for the website service, GitHub uses **Jekyll**[^jekyll] to build the site under the hood and then deploy into GitHub Pages. Jekyll is natively supported by GitHub, so the folder structure follows a generic Jekyll site layout.
 
 ![Jekyll](jekyll.png){: w="650px" h="650px" }
 
@@ -115,7 +115,7 @@ Following the [official docs](https://docs.github.com/en/pages/setting-up-a-gith
 
 ![Fixing](fix.png){: w="500px" h="500px" }
 
-Trigger the build and deployment [workflow](#workflow) again and review the site once it is deployed.
+Trigger the build and deployment **workflow**[^workflow] again and review the site once it is deployed.
  
 
 ![Pages Fixed](pages-fix.png){: w="500px" h="500px" }
@@ -127,21 +127,21 @@ That's all for today folks.
 ---
 ## 🧲 Terminologies
 
+[^markdown]: **Markdown**: A simple markup language for formatting texts and compiling into **HTML**.
 
-1. #### GitHub Pages 
-   A sweet static website service by **GitHub** that builds a site from the static contents of a repository. Such sites automatically bind to a `github.io` domain by default. 
-1. #### Markdown
-   A simple markup language for formatting texts and compiling into **HTML**.
-1. #### Capture The Flag
-   CTF is an **information security** competition which deals with forensics, cryptography, binary analysis, reverse engeneering and many more cyber security topics.
-1. #### VS Code
-   Visual Studio Code is a code editor by **Microsoft** for building and debugging modern web and cloud applications.
-1. #### Jekyll
-   A static site generator with a simplified build process involving markdown and HTML files.
-1. #### Commonmark
-    A rationalized specification of Markdown that defines the language syntax and offers a tests suite to validate Markdown implementations.
-1. #### Workflow
-   A configurable automated process that runs one or more jobs. The default `pages build and deployment` workflow by GitHub builds the sources and deploys it to GitHub pages.
+[^github-pages]: **GitHub Pages**: A sweet static website service by **GitHub** that builds a site from the static contents of a repository. Such sites automatically bind to a `github.io` domain by default.
+
+
+[^capture-the-flag]: **Capture The Flag**: CTF is an **information security** competition which deals with forensics, cryptography, binary analysis, reverse engeneering and many more cyber security topics.
+
+[^vs-code]: **VS Code**: Visual Studio Code is a code editor by **Microsoft** for building and debugging modern web and cloud applications.
+
+[^jekyll]: **Jekyll**: A static site generator with a simplified build process involving markdown and HTML files.
+
+[^commonmark]: **Commonmark**: A rationalized specification of Markdown that defines the language syntax and offers a tests suite to validate Markdown implementations.
+
+[^workflow]: **Workflow**: A configurable automated process that runs one or more jobs. The default `pages build and deployment` workflow by GitHub builds the sources and deploys it to GitHub pages. 
+
 ---
 
 ## 📝 References  
