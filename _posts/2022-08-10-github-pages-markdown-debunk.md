@@ -125,6 +125,17 @@ All fixed! ✔ Faith in life restored! ❤
 That's all for today folks.
 
 ---
+
+## 📝 References  
+
+- [GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll) 
+- [Markdown Wiki](https://en.wikipedia.org/wiki/Markdown#:~:text=10%20External%20links-,History,the%20true%20structured%20text%20format%E2%80%9D.)
+- [Jekyll Official Site](https://jekyllrb.com/)
+- [GitHub Flavored Markdown](https://github.github.com/gfm/#what-is-github-flavored-markdown-)
+- [Formal Specification For Markdown](https://www.smashingmagazine.com/2020/12/commonmark-formal-specification-markdown/)
+
+---
+
 ## 🧲 Terminologies
 
 [^markdown]: **Markdown**: A simple markup language for formatting texts and compiling into **HTML**.
@@ -144,12 +155,3 @@ That's all for today folks.
 
 ---
 
-## 📝 References  
-
-- [GitHub Docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll) 
-- [Markdown Wiki](https://en.wikipedia.org/wiki/Markdown#:~:text=10%20External%20links-,History,the%20true%20structured%20text%20format%E2%80%9D.)
-- [Jekyll Official Site](https://jekyllrb.com/)
-- [GitHub Flavored Markdown](https://github.github.com/gfm/#what-is-github-flavored-markdown-)
-- [Formal Specification For Markdown](https://www.smashingmagazine.com/2020/12/commonmark-formal-specification-markdown/)
-
----
