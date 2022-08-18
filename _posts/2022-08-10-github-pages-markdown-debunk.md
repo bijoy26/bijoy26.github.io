@@ -11,11 +11,11 @@ categories: [Web Development, GitHub Pages ]
 tags: [jekyll, static-site, markdown, GFM, kramdown, tech-tips, workaround]  
 render_with_liquid: false
 pin: true
-
+comments: true
 # img_path: /assets/img/posts-img/YYYY-MM-DD/
 # Add image => ![Desktop View](/assets/img/sample/mockup.png){: w="700" h="400" }
 # toc: false    // table of contents in right sidebar
-# comments: false
+# comments: false // turn of disqus comments
 # math: true    // math engine
 # mermaid: true  // diagram tool
 # pin: true
