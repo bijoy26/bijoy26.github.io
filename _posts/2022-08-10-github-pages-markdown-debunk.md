@@ -3,10 +3,10 @@ title: "🎯 Master of Markdown - Debunking the Parsing Issue in GitHub Pages"
 description: "Investigating the Dreadful Markdown Rendering in Jekyll Sites Deployed in GitHub Pages"
 date: 2022-08-10 23:00:00 +0600
 author: 01
-img_path: /assets/img/posts-img/2022-08-10
+#img_path: /assets/img/posts-img/2022-08-10
 image:
-  path: cover.jpg
-  width: 300   # in pixels
+  path: /assets/img/posts-img/2022-08-10/cover.png
+  width: 500   # in pixels
   height: 300   # in pixels 
 categories: [Web Development, GitHub Pages ]
 tags: [jekyll, static-site, markdown, GFM, kramdown, tech-tips, workaround]  
@@ -55,11 +55,11 @@ I'm an avid fan of cyber security engagements, and so I keep my solution writeup
 
 This is how the `README.md` looks like in **VS Code**[vs-code] and GitHub web:
  
-![GitHub View](gh-view.png){: w="500" h="500" }
+![GitHub View](/assets/img/posts-img/2022-08-10/gh-view.png){: w="500" h="500" }
 
 After publishing through GitHub pages, the markdown-to-HTML conversion didn't seem to go the right way.
 
-![Pages View](pages-view.png){: w="500px" h="500px" }
+![Pages View](/assets/img/posts-img/2022-08-10/pages-view.png){: w="500px" h="500px" }
 
 See the scaled out middle section? Clearly, GitHub's static site service is misinterpreting the markdown. Let's investigate and sort it out.
 
@@ -69,7 +69,7 @@ See the scaled out middle section? Clearly, GitHub's static site service is misi
 
 Back in 2004, **Markdown** came into being  with the intention of _being appealing to human readers in its markup form_. This made it widely popular in blogging, documentation, software development and readmes.
 
-![Markdown](mark.png){: w="840" h="350px" }
+![Markdown](/assets/img/posts-img/2022-08-10/mark.png){: w="840" h="350px" }
 _Courtesy: `@developer_anand`_
 
 But it had some ambiguities and inconsistencies, and so a lot of markdown flavors (syntax variations) started making their appearance. 
@@ -86,7 +86,7 @@ GitHub made their own dialect of markdown based on this spec by extending its fe
 
 When a repo is activated for the website service, GitHub uses **Jekyll**[^jekyll] to build the site under the hood and then deploy into GitHub Pages. Jekyll is natively supported by GitHub, so the folder structure follows a generic Jekyll site layout.
 
-![Jekyll](jekyll.png){: w="650px" h="650px" }
+![Jekyll](/assets/img/posts-img/2022-08-10/jekyll.png){: w="650px" h="650px" }
 
 > The configuration of a Jekyll site entirely takes place in a `_config.yml`{: .filepath} file in the root directoy. 
 {: .prompt-info } 
@@ -110,17 +110,20 @@ Cool! We found the stumbling brick. 😃
 
 Since GitHub was invoking Jekyll out-of-the-box with default options, my site's GFM markdown was being rendered by Kramdown and thus the HTML turned out different!
 
+
+![Meme](/assets/img/posts-img/2022-08-10/meme.jpg){: w="400" h="400" }
+
  
 ### **📌 The Fix🔨** 
 
 Following the [official docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll), we can modify our repo's `_config.yml` file (create one if nonexistant) in the root directory. Add `markdown: GFM` option to override the kramdown parser.
 
-![Fixing](fix.png){: w="500px" h="500px" }
+![Fixing](/assets/img/posts-img/2022-08-10/fix.png){: w="500px" h="500px" }
 
 Trigger the build and deployment **workflow**[^workflow] again and review the site once it is deployed.
  
 
-![Pages Fixed](pages-fix.png){: w="500px" h="500px" }
+![Pages Fixed](/assets/img/posts-img/2022-08-10/pages-fix.png){: w="500px" h="500px" }
 
 All fixed! ✔ Faith in life restored! ❤
 
