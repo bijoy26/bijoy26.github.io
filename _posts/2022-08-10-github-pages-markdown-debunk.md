@@ -5,7 +5,7 @@ date: 2022-08-10 23:00:00 +0600
 author: 01
 img_path: /assets/img/posts-img/2022-08-10
 image:
-  path: /cover.jpg
+  path: cover.jpg
   width: 300   # in pixels
   height: 300   # in pixels 
 categories: [Web Development, GitHub Pages ]
