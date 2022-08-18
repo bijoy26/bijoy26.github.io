@@ -22,3 +22,6 @@ package-lock.json
 # personal files
 CHANGELOG.md
 POST_REFERENCE.md
+
+# build artifacts (site HTML sources)
+_site

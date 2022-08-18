@@ -1,6 +1,6 @@
 ---
 title: "🎯 Master of Markdown - Debunking the Parsing Issue in GitHub Pages"
-description: "Investigating the Dreadful Markdown Rendering in Jekyll Sites"
+description: "Investigating the Dreadful Markdown Rendering in Jekyll Sites Deployed in GitHub Pages"
 date: 2022-08-10 23:00:00 +0600
 author: 01
 img_path: /assets/img/posts-img/2022-08-10
