@@ -1,16 +1,18 @@
 ---
 title: "🎯 Master of Markdown - Debunking the Parsing Issue in GitHub Pages"
+description: "Investigating the Dreadful Markdown Rendering in Jekyll Sites"
 date: 2022-08-10 23:00:00 +0600
 author: 01
-img_path: /assets/img/posts-img/2022-08-10/
+img_path: /assets/img/posts-img/2022-08-10
 image:
   path: /cover.jpg
   width: 300   # in pixels
   height: 300   # in pixels 
 categories: [Web Development, GitHub Pages ]
-tags: [jekyll, static-site, markdown, GFM, tech-tips, workaround]  
+tags: [jekyll, static-site, markdown, GFM, kramdown, tech-tips, workaround]  
 render_with_liquid: false
 pin: true
+
 # img_path: /assets/img/posts-img/YYYY-MM-DD/
 # Add image => ![Desktop View](/assets/img/sample/mockup.png){: w="700" h="400" }
 # toc: false    // table of contents in right sidebar
