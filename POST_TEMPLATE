@@ -1,0 +1,106 @@
+---
+title: "🎯 Your Title Here"
+description: "Your Description"
+date: 2022-08-10 23:00:00 +0600
+author: 01
+image:
+  path: /assets/img/posts-img/YYYY-MM-DD/filename.ext
+  width: 500   # in pixels
+  height: 300   # in pixels 
+categories: [Primary Category, Secondary Category ]
+tags: [tag1, some-tag2, tag3, more-tags ]  
+render_with_liquid: false
+pin: true
+
+# img_path: /assets/img/posts-img/YYYY-MM-DD/
+# Add image => ![Desktop View](/assets/img/sample/mockup.png){: w="700" h="400" }
+# toc: false    // table of contents in right sidebar
+# comments: false
+# math: true    // math engine
+# mermaid: true  // diagram tool
+# pin: true
+# > Example line for prompt.
+# {: .prompt-info }     //  tip | info | warning | danger
+# filepath highlight `/path/to/a/file.extend`{: .filepath}
+# Hide Line Numbers: ```shell
+#                   echo 'No more line numbers!'
+#                   ```
+#                   {: .nolineno }
+#                   {: file="add-filename-here" }
+---
+
+![Web Dev](https://img.shields.io/badge/Domain-Web%20Dev-blue.svg){: w="100" h="15" .left }
+![Topic: Tech Tips](https://img.shields.io/badge/Category-Tech%20Tips-green.svg){: w="100" h="20" .left }
+![GitHub Pages](https://img.shields.io/badge/Environment-GitHub%20Pages-darkgreen.svg){: w="150" h="20" .left}
+<br>
+
+## 📺 Context
+ 
+*  Point1
+*  Point2
+*  Point3
+
+## ⏩ TL;DR
+
+> In a rush? Skip to [Final Step](#-final-step) to get the solution.
+{: .prompt-tip } 
+
+## 🍦 Background
+
+lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  
+
+ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+
+Here is a **Reverse Footnote**[^rev-foot] lorem ipsum lorem ipsum lorem ipsum lorem
+ 
+![Attach Image Name](/assets/img/posts-img/YYYY-MM-DD/filename.png){: w="500" h="500" }
+
+
+## 🔎 Solution
+
+### **Step 1**
+
+lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+
+![Attach Image Name](/assets/img/posts-img/YYYY-MM-DD/filename.png){: w="840" h="350px" }
+_Courtesy: `@some_handle`_
+
+lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
+
+> 💡 A Quote here. 
+{: .prompt-info } 
+
+### **📌 Step 2**
+
+lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
+
+### **📌 Step 3** 
+
+lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+
+> _A warning quote_
+{: .prompt-warning }
+
+### **📌 Final Step** 
+
+lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+
+That's all for today folks.
+
+---
+
+## 📝 References  
+
+- [Topic1](#) 
+- [Topic2](#) 
+- [Topic3](#) 
+
+
+---
+
+## 🧲 Terminologies
+
+[^rev-foot]: **Rev Foot**: A simple reverse footnote.
+
+---
+

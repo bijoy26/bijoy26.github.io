@@ -3,7 +3,6 @@ title: "🎯 Master of Markdown - Debunking the Parsing Issue in GitHub Pages"
 description: "Investigating the Dreadful Markdown Rendering in Jekyll Sites Deployed in GitHub Pages"
 date: 2022-08-10 23:00:00 +0600
 author: 01
-#img_path: /assets/img/posts-img/2022-08-10
 image:
   path: /assets/img/posts-img/2022-08-10/cover.png
   width: 500   # in pixels
@@ -30,11 +29,6 @@ pin: true
 #                   {: file="add-filename-here" }
 ---
 
-![Web Dev](https://img.shields.io/badge/Domain-Web%20Dev-blue.svg){: w="100" h="15" .left }
-![Topic: Tech Tips](https://img.shields.io/badge/Category-Tech%20Tips-green.svg){: w="100" h="20" .left }
-![GitHub Pages](https://img.shields.io/badge/Environment-GitHub%20Pages-darkgreen.svg){: w="150" h="20" .left}
-<br>
-
 ## 📺 Context
  
 * You keep a **GitHub** repository for documentation purpose.
@@ -53,7 +47,7 @@ pin: true
 
 I'm an avid fan of cyber security engagements, and so I keep my solution writeups for **CTF (Capture The Flag)**[^capture-the-flag] contests in my handy [ctf-journal](https://github.com/bijoy26/ctf-journal) repo.
 
-This is how the `README.md` looks like in **VS Code**[vs-code] and GitHub web:
+This is how the `README.md` looks like in **VS Code**[^vs-code] and GitHub web:
  
 ![GitHub View](/assets/img/posts-img/2022-08-10/gh-view.png){: w="500" h="500" }
 
